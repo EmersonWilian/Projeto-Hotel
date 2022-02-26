@@ -1,0 +1,173 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(imagens/bg.png);
+    background-color: #fff;
+    margin: 15px;
+}
+#container{
+    background-color: #ede9cc;
+    margin: 0 auto;
+    background-image: url(imagens/bg-container.png) top center repeat-y;
+    min-width: 740px;
+    max-width: 1180px; /*Tamanho perfeito para exibir a imagem*/
+    
+
+}
+#topo{
+    position: relative; /*O topo vai ter uma posição relativa*/
+    background-color: #dbcd87;
+    height: 15.4em; /*Colocamos a medida em "EM" por causa se o texto diminuir ele diminui*/
+    min-height: 250px; /*A altura do topo n vai ser inferior a 250px*/
+}
+#area-logo{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    top: 0;  /*Area de logo fica colada no container*/
+    left: 0; /*Area de logo fica colada no container*/
+    background: url(imagens/topo-imagem-principal.png) no-repeat;
+    z-index: 1;
+}
+
+.logo a{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 3;
+    background: url(imagens/logo.png);
+    width: 151px;
+    height: 66px;
+    text-indent: -9000px; /*Para remover o texto escrito do h1*/
+}
+
+#area-menu{
+    position: absolute; 
+    width: 450px;
+    height: 250px;
+    top: 0;   /*Area de logo fica colada no container*/
+    right: 0; /*Area de logo fica colada no container*/
+    background: url(imagens/topo-imagem-lateral.png);
+    z-index: 2;
+}
+#conteudo-menu{
+    margin-left: 90px;
+    margin-right: 15px;
+    padding-top: 15px;
+
+}
+#menu-locais{
+    border-bottom: 1px solid #b5ab56;
+    border-top: 1px solid #b5ab56;
+    padding: 5px 0px;
+    font-size: 0.9em;
+    color: #8b8448;
+}
+#menu-locais .locais{
+    float: left;
+    line-height: 2.1em; /*Alinhando o texto no centro da cx*/
+}
+a{
+    text-decoration: none;
+}
+a.reserva{
+    text-transform: uppercase;
+    background: #a29750;
+    color: #fff5b0;
+    padding: 5px 10px;
+    float: right;
+} 
+#menu{
+    margin-top: 15px;
+    
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+ul#navegação a{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 5px;
+    color: #6e672c;
+    line-height: 30px; /*Espaçamento entre os itens do menu*/
+   /* display: block;  -------------- Com o display block ele vai ocupar todo o espaçamento da caixa*/
+}
+ul#navegação a:hover{
+    background-color: #fdf6be;
+
+}
+#navegação{
+    float: left;
+}
+.depoimento{
+    width: 226px;
+    height: 164px;
+    float: right;
+}
+#area-principal{
+    /*background-color: aqua;*/
+    background: url(imagens/bg-area-principal.png ) top left repeat-x;
+    width: 50%;
+    float: left;
+    padding: 15px 0px;
+    text-align: justify;
+}
+#area-lateral{
+    /*background-color: green;*/
+    background: url(imagens/bg-area-principal.png ) top left repeat-x;
+    width: 50%;
+    float: right;
+    padding: 20px 0px;
+}
+.conteudo{ /*Vou usar dentro da area principal e lateral*/
+    margin: 0 auto;
+    width: 90%;
+    /* background-color: red; */
+}
+#rodapé{
+    clear: both;
+    padding: 16px;
+    background: #fff url(imagens/bg-rodape.png) repeat-x top;
+    color: #7d7640 ;
+    
+}h2{
+    color: #7d7640;
+    font-size: 1.1em;
+    padding: 5px 0px;
+}
+p{
+    font-size: 1em;
+    margin-bottom:10px;
+}
+
+#beneficios li{
+    padding: 8px;
+    border: 1px solid #f3efcb;
+    height: 6em;
+}
+#beneficios li a img{
+    float: left;
+    margin-right: 8px;
+}
+#beneficios li a p{
+    font-size: 0.8em;
+    color: black;
+}
+#beneficios li a h3{
+    font-size: 1.1em;
+    color: #615b2d;
+    padding: 5px 0;
+    background: url(imagens/ornamento.png) no-repeat right;
+}
+#beneficios li:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
